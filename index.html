@@ -17,6 +17,8 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css" />
+
+   <!-- bootstrap -->
 </head>
 
 <body>
@@ -38,16 +40,16 @@
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="info-btn" class="fas fa-info-circle"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="login-btn" class="fas fa-user"></div>
+         <!-- <div id="search-btn" class="fas fa-search"></div> -->
+         <!-- <div id="login-btn" class="fas fa-user"></div> -->
       </div>
 
-      <form action="" class="search-form">
+      <!-- <form action="" class="search-form">
          <input type="search" name="" placeholder="search here..." id="search-box" />
          <label for="search-box" class="fas fa-search"></label>
-      </form>
+      </form> -->
 
-      <form action="" class="login-form">
+      <!-- <form action="" class="login-form">
          <h3>login form</h3>
          <input type="email" placeholder="enter your email" class="box" />
          <input type="password" placeholder="enter your password" class="box" />
@@ -58,7 +60,7 @@
          </div>
          <input type="submit" value="login now" class="btn" />
          <p>don't have an account <a href="#">create one!</a></p>
-      </form>
+      </form> -->
    </header>
 
    <div class="contact-info">
@@ -190,8 +192,62 @@
 
    <section class="services" id="services">
       <h1 class="heading">our services</h1>
+      <div class="flex-container">
+            <div class="slide">
+               <div class="image">
+                  <img src="images/service-1.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>blog title goes here</h3>
+                  <p>
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Assumenda, nobis!
+                  </p>
+                  <a href="#" class="btn">read more</a>
+               </div>
+            </div>
+            <div class="slide">
+               <div class="image">
+                  <img src="images/service-2.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>blog title goes here</h3>
+                  <p>
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Assumenda, nobis!
+                  </p>
+                  <a href="#" class="btn">read more</a>
+               </div>
+            </div>
+            <div class="slide">
+               <div class="image">
+                  <img src="images/service-3.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>blog title goes here</h3>
+                  <p>
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Assumenda, nobis!
+                  </p>
+                  <a href="#" class="btn">read more</a>
+               </div>
+            </div>
+            <div class="slide">
+               <div class="image">
+                  <img src="images/service-4.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>blog title goes here</h3>
+                  <p>
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Assumenda, nobis!
+                  </p>
+                  <a href="#" class="btn">read more</a>
+               </div>
+            </div>
+      </div>
 
-      <div class="box-container">
+      <!-- <div class="box-container">
          <div class="box">
             <img src="images/service-1.png" alt="" />
             <h3>building construction</h3>
@@ -263,14 +319,139 @@
                necessitatibus.
             </p>
          </div>
-      </div>
+      </div> -->
    </section>
 
    <!-- services section ends -->
 
    <!-- projects section starts  -->
-
    <section class="projects" id="projects">
+      <h1 class="heading">our projects</h1>
+    
+      <div class="filters">
+        <button data-filter="all" class="btn active">All</button>
+        <button data-filter="construction" class="btn">Construction</button>
+        <button data-filter="design" class="btn">Design</button>
+      </div>
+    
+      <div class="box-container">
+         <a href="images/project-1.jpg" class="box" data-category="construction">
+            <div class="image">
+               <img src="images/project-1.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>dream home</h3>
+                  <p>construction</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+    
+         <a href="images/project-2.jpg" class="box" data-category="design">
+            <div class="image">
+               <img src="images/project-2.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>modern office</h3>
+                  <p>design</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+    
+         <a href="images/project-3.jpg" class="box" data-category="construction">
+            <div class="image">
+               <img src="images/project-3.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>luxury villa</h3>
+                  <p>construction</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+    
+         <a href="images/project-4.jpg" class="box" data-category="design">
+            <div class="image">
+               <img src="images/project-4.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>modern apartment</h3>
+                  <p>design</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+    
+         <a href="images/project-5.jpg" class="box" data-category="construction">
+            <div class="image">
+               <img src="images/project-5.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>dream home</h3>
+                  <p>construction</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+    
+         <a href="images/project-6.jpg" class="box" data-category="design">
+            <div class="image">
+               <img src="images/project-6.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>modern kitchen</h3>
+                  <p>design</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+         <a href="images/project-7.jpg" class="box" data-category="design">
+            <div class="image">
+               <img src="images/project-7.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>modern kitchen</h3>
+                  <p>design</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+         <a href="images/project-8.jpg" class="box" data-category="design">
+            <div class="image">
+               <img src="images/project-8.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>modern kitchen</h3>
+                  <p>design</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+         <a href="images/project-9.jpg" class="box" data-category="design">
+            <div class="image">
+               <img src="images/project-9.jpg" alt="" />
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>modern kitchen</h3>
+                  <p>design</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+      </div>
+    </section>
+    
+   <!-- <section class="projects" id="projects">
       <h1 class="heading">our projects</h1>
 
       <div class="box-container">
@@ -352,7 +533,7 @@
             </div>
          </a>
       </div>
-   </section>
+   </section> -->
 
    <!-- projects section ends -->
 
@@ -502,7 +683,7 @@
 
    <!-- pricing section starts  -->
 
-   <section class="pricing" id="pricing">
+   <!-- <section class="pricing" id="pricing">
       <h1 class="heading">our pricing</h1>
 
       <div class="box-container">
@@ -548,7 +729,7 @@
             <a href="#" class="btn">choose plan</a>
          </div>
       </div>
-   </section>
+   </section> -->
 
    <!-- pricing section ends -->
 
@@ -673,7 +854,7 @@
 
    <!-- client logo section starts -->
 
-   <section class="logo-container">
+   <!-- <section class="logo-container">
       <div class="swiper logo-slider">
          <div class="swiper-wrapper">
             <div class="swiper-slide slide">
@@ -696,7 +877,7 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
 
    <!-- client logo section ends -->
 
@@ -714,7 +895,7 @@
       </div>
 
       <div class="credit">
-         created by <span>mr. web designer</span> | all rights reserved!
+         <p><span>Copywrite © 2023 <a href="www.safprotech.com">SAFPRO TECHNOLOGY SOLUTIONS </a>| all rights reserved!</span> </p>
       </div>
    </section>
 
